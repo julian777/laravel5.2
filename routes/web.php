@@ -37,4 +37,7 @@ Route::group(['middleware' => 'web'], function() {
     
     Route::post('admins/login','AdministratorsController@login');
     Route::get('admins/area','AdministratorsController@secret');
+    Route::get('bitcoin/index','ModelController@index');
+    Route::get('bitcoin/consulta','ModelController@consulta');
+    Route::get('bitcoin/update','ModelController@update');
 });

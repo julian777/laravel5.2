@@ -3,7 +3,7 @@
 @section('content')
 <br/>
 <br/>
-
+    
 <?php
 $url = "https://btc-e.com/api/2/btc_usd/ticker";
 $json = json_decode(file_get_contents($url), true);
@@ -43,14 +43,14 @@ $price = $json["ticker"]["last"];
     <tr>
         <td>
 
-            <a href="bitcoin.php"><img src="../../public/perfiles/icon-grafico.png" alt="" width="250px" height="250px" /></a>
+            <a href="bitcoin/index"><img src="/images/icon-grafico.png" alt="" width="250px" height="250px" /></a>
             
             <p>Ir a la grafica de los precios actuales BTC</p>
             </br>
             <br/>
         </td>
         <td>
-            <a href="../../../public/consulta.php"><img src="../../public/perfiles/shop3-512.png" width="250px" height="250px"></a>
+            <a href="bitcoin/consulta"><img src="/images/shop3-512.png" width="250px" height="250px"></a>
             <p>Consulte su saldo BTC-USD</p>
         </td>
 <div class="text-success" id='result'>
@@ -61,7 +61,7 @@ $price = $json["ticker"]["last"];
      <td>
 <br/>
 
-<a href="../../../public/formuUpdate.php"><img src="../../../aplicaciones/public/perfiles/btcdolar.jpeg" ></a>
+<a href="bitcoin/update"><img src="/images/btcdolar.jpeg" ></a>
 <p>Convertir de USD a BTC..Actualice sus bitcoins!!!</p>
         </td>
     </tr>
