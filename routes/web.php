@@ -34,10 +34,12 @@ Route::group(['middleware' => 'web'], function() {
 
     Route::get('/home', 'HomeController@index');
     Route::get('admins/login', 'AdministratorsController@showLoginform');
-    
-    Route::post('admins/login','AdministratorsController@login');
-    Route::get('admins/area','AdministratorsController@secret');
-    Route::get('bitcoin/index','ModelController@index');
-    Route::get('bitcoin/consulta','ModelController@consulta');
-    Route::get('bitcoin/update','ModelController@update');
+
+    Route::post('admins/login', 'AdministratorsController@login');
+    Route::get('admins/area', 'AdministratorsController@secret');
+    Route::get('bitcoin/index', 'ModelController@index');
+    Route::get('bitcoin/consulta', 'ModelController@consulta');
+    Route::get('bitcoin/update', 'ModelController@update');
+    Route::get('form/coingo', 'ModelController@coingo');
+    Route::post('form/coin', 'ModelController@coin');
 });

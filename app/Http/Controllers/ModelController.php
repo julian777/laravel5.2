@@ -22,9 +22,21 @@ class ModelController extends Controller {
 
         return redirect('http://localhost/Autenticacion/app/consulta.php');
     }
-    
-    public function update(){
+
+    public function update() {
         return redirect('http://localhost/Autenticacion/app/formuUpdate.php');
+    }
+
+    public function coin() {
+
+
+        return redirect('http://localhost/Autenticacion/app/consulta.php');
+    }
+
+    public function coingo() {
+
+
+        return redirect('http://localhost/Autenticacion/resources/views/forms/form.blade.php');
     }
 
 //    function __construct() {

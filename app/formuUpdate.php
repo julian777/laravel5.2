@@ -4,7 +4,7 @@
             $dbhost = 'localhost';
             $dbuser = 'root';
             $dbpass = 'root';
-            $dbname = "test_db";
+            $dbname = "prueba";
 
             $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
@@ -12,11 +12,16 @@
                 die('Could not connect: ' . mysql_error());
             }
 
-            $emp_id = $_POST['emp_id'];
-            $emp_salary = $_POST['emp_salary'];
-
-            $sql = "UPDATE employee " . "SET emp_salary = $emp_salary " .
-                    "WHERE emp_id = $emp_id";
+            $correo = $_POST['correo'];
+            $bitcoin = $_POST['bitcoin'];
+//
+//            $sql = "UPDATE billetera SET bitcoins = '$bitcoin'
+//                    WHERE correo = '$correo'";
+//               echo "jey\n".$correo." ".$bitcoin;
+//               
+//               
+//               
+ $sql = " call getCompra('$correo','$bitcoin')";
             //  mysql_select_db('test_db');
             $retval = $conn->query($sql);
             //$retval = mysql_query( $sql, $conn );
@@ -27,7 +32,7 @@
             echo "Updated data successfully\n";
             $conn->close();
             // mysql_close($conn);
-            header("Location: http://localhost/aplicaciones/public/consulta.php");
+            header("Location: http://localhost/Autenticacion/app/consulta.php");
             die();
         } else {
             ?>
@@ -40,13 +45,13 @@
             <form method = "post" action = "<?php $_PHP_SELF ?>">
 
                 <div class="form-group" >
-                    <label for="emp_id">ID:</label>
-                    <input type="text" class="form-control" name="emp_id"  id = "emp_id" />
+                    <label for="correo">ID:</label>
+                    <input type="text" class="form-control" name="correo"  id = "correo" />
                 </div>
 
                 <div class="form-group" >
-                    <label for="emp_id">Cantidad BTC:</label>
-                    <input type="text" class="form-control" name="emp_salary"  id = "emp_salary"/>
+                    <label for="correo">Cantidad BTC:</label>
+                    <input type="text" class="form-control" name="bitcoin"  id = "bitcoin"/>
                 </div>
 
                 <div>
