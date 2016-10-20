@@ -45,7 +45,7 @@
             <form method = "post" action = "<?php $_PHP_SELF ?>">
 
                 <div class="form-group" >
-                    <label for="correo">ID:</label>
+                    <label for="correo">Correo:</label>
                     <input type="text" class="form-control" name="correo"  id = "correo" />
                 </div>
 
