@@ -5,7 +5,9 @@
         <group>
             <file>file:/var/www/html/Autenticacion/routes/web.php</file>
             <file>file:/var/www/html/Autenticacion/app/consulta.php</file>
+            <file>file:/var/www/html/Autenticacion/app/bitcoin.php</file>
             <file>file:/var/www/html/Autenticacion/resources/views/layouts/app.blade.php</file>
+            <file>file:/var/www/html/Autenticacion/resources/views/forms/form.blade.php</file>
             <file>file:/var/www/html/Autenticacion/app/Http/Controllers/ModelController.php</file>
             <file>file:/var/www/html/Autenticacion/app/formuUpdate.php</file>
         </group>

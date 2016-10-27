@@ -61,7 +61,7 @@ $price = $json["ticker"]["last"];
     <td>
         <br/>
 
-        <a href="form/coingo"><img src="/images/btcdolar.jpeg" ></a>
+        <a href="form/coingo"><img src="/images/oie_transparent.png" ></a>
         <p>Convertir de USD a BTC..Actualice sus bitcoins!!!</p>
     </td>
 
